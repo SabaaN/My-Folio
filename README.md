@@ -22,19 +22,27 @@ Contact Form: Enable visitors to get in touch with you directly through a contac
 ### Installation
 
 Clone the repository:
+
 git clone https://github.com/SabaaN/my-folio.git
 
 
 Navigate to project directory
+
 cd my-folio
 
 
 Install dependencies:
+
+
 npm install
 
 
 Start the development server:
+
+
 npm run dev
+
+
 Open your browser and visit http://localhost:3000 to view the website.
 
 
