@@ -1,0 +1,12 @@
+When clicking on icons should open the page on new tab (DONEEEE)
+
+Fixing the css  of the "about me" lines in hero section  
+
+when clicked on download resume, should be able to download resume (DONEEEE)
+
+fix the size of portfolio images (DONEEE)
+
+Fix the transition of machine learning in services section (DONEEEE)
+
+
+
