@@ -1,4 +1,4 @@
-# PERSONAL PORTFOLIO WEBSITE
+# PERSONAL PORTFOLIO 
 
 It is a personal website portfolio built using React, Vite, and Tailwind CSS. It serves as a showcase of my projects, skills, and experiences. 
 
