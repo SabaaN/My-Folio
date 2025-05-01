@@ -23,7 +23,7 @@ body {
 }
 
 section {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 :root {
@@ -90,8 +90,9 @@ section {
   gap: 1.5rem;
 }
 
-
-
+.skill-bar {
+  transition: width 1.5s ease-in-out;
+}
 
 .skills__titles{
   display: flex;
