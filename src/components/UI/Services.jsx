@@ -7,7 +7,7 @@ const Services = () => {
             <div className='container lg:pt-5'>
                 <div className='text-center'>
                     <h2 className='text-headingColor font-[800] text-[2.4rem] mb-5'>
-                        What Do I Do
+                        What I Do
                     </h2>
                     <p className='lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7'>
                         The areas where I bring value through my skills and experience.
@@ -26,7 +26,7 @@ const Services = () => {
                                     <div className='flex justify-start w-full mx-auto items-center'>
                                         <div className='w-full sm:w-1/2 sm:pr-8'>
                                             <div data-aos='fade-right' data-aos-duration='1200' className='bg-white p-4 rounded shadow group'>
-                                                <h3 className='text-primaryColor font-[700] mb-3 text-2xl'>Machine Learning</h3>
+                                                <h3 className='text-primaryColor font-[700] mb-3 sm: mt-5 text-2xl'>Machine Learning</h3>
                                                 <p className='text-[15px] text-smallTextColor font-[500] mb-7 leading-7'>
                                                     I build intelligent systems that analyze data, learn patterns, and make accurate predictions. My experience spans from data preprocessing and model training to deploying scalable ML solutions in real-world applications.
                                                 </p>
@@ -46,7 +46,7 @@ const Services = () => {
                                     <div className='flex justify-end w-full mx-auto items-center'>
                                         <div className='w-full sm:w-1/2 sm:pl-8'>
                                             <div data-aos='fade-left' data-aos-duration='1200' className='bg-white p-4 rounded shadow group'>
-                                                <h3 className='text-primaryColor font-[700] mb-3 text-2xl'>Web Development</h3>
+                                                <h3 className='text-primaryColor font-[700] mb-3 text-2xl sm: mt-5'>Web Development</h3>
                                                 <p className='text-[15px] text-smallTextColor font-[500] mb-7 leading-7'>
                                                     From dynamic frontends to robust backends, I design and build responsive, scalable web and app solutions that deliver performance and a great user experience. I handle everything from UI development to server-side logic and APIs.
                                                 </p>
@@ -66,7 +66,7 @@ const Services = () => {
                                     <div className='flex justify-start w-full mx-auto items-center'>
                                         <div className='w-full sm:w-1/2 sm:pr-8'>
                                             <div data-aos='fade-right' data-aos-duration='1200' className='bg-white p-4 rounded shadow group'>
-                                                <h3 className='text-primaryColor font-[700] mb-3 text-2xl'>Blockchain Dev</h3>
+                                                <h3 className='text-primaryColor font-[700] mb-3 text-2xl sm: mt-5'>Blockchain Dev</h3>
                                                 <p className='text-[15px] text-smallTextColor font-[500] mb-7 leading-7'>
                                                     As a beginner in blockchain, I'm currently exploring smart contracts, decentralized apps (dApps), and Web3 development. I'm passionate about learning how blockchain can bring transparency and trust to digital systems.
                                                 </p>

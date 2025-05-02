@@ -40,97 +40,112 @@ export const Contact = () => {
     }
   };
 
-
-
-  
   return (
-    <section id='contact'>
-      <section className='container'>
-        <div className='text-center'>
-          <h2 className='text-headingColor font-[800] text-[2.4rem] mb-1'>
+    <section id='contact' className="py-8">
+      <section className='container mx-auto px-4'>
+        <div className='text-center mb-12'>
+          <h2 className='text-headingColor font-[800] text-[2.4rem] mb-4'>
             Contact Me
           </h2>
-          <p className='lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7 mb-[36px]'
-          >
+          <p className='max-w-[600px] mx-auto text-headingColor font-[500] text-[16px] leading-7'>
             Get in touch with me
           </p>
         </div>
-        <div className='contact_container container grid grid-cols-1 md:grid-cols-2 gap-8'>
-        <div className="md:col-span-1">
-          <div className='contact_information mb-[65px]'>
-            <span className='text-primaryColor text-3xl font-bold'>
-              <i className='ri-phone-fill'></i> Phone
-            </span>
-            <p>+923362370128</p>
+        
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className="space-y-8">
+            <div className='contact_information'>
+              <span className='text-primaryColor text-3xl font-bold'>
+                <i className='ri-phone-fill'></i> Phone
+              </span>
+              <p className='mt-2'>+923362370128</p>
+            </div>
+            <div className='contact_information'>
+              <span className='text-primaryColor text-3xl font-bold'>
+                <i className='ri-mail-fill'></i> Email
+              </span>
+              <p className='mt-2'>sabanvd34@gmail.com</p>
+            </div>
+            <div className='contact_information'>
+              <span className='text-primaryColor text-3xl font-bold'>
+                <i className='ri-map-pin-5-fill'></i> Address
+              </span>
+              <p className='mt-2'>Karachi, Pakistan</p>
+            </div>
           </div>
-          <div className='contact_information mb-[65px]'>
-            <span className='text-primaryColor text-3xl font-bold '>
-              <i className='ri-mail-fill'></i> Email
-            </span>
-            <p>sabanvd34@gmail.com</p>
-          </div>
-          <div className='contact_information mb-[65px]'>
-            <span className='text-primaryColor text-3xl font-bold'>
-              <i className='ri-map-pin-5-fill'></i> Address
-            </span>
-            <p>Karachi, Pakistan</p>
-          </div>
-          </div>
-          <form onSubmit={handleSubmit} className='contact-form'>
-            <input
-              type='text'
-              value={formDetails.firstName}
-              placeholder='First Name'
-              onChange={(e) => onFormUpdate('firstName', e.target.value)}
-              className='mb-6 mr-[50px] p-2 border border-headingColor rounded-[10px] bg-gray-100 bg-opacity-75'
-            />
-            <input
-              type='text'
-              value={formDetails.lastName}
-              placeholder='Last Name'
-              onChange={(e) => onFormUpdate('lastName', e.target.value)}
-              className='mb-6 p-2 mr-[50px] border border-headingColor rounded-[10px] bg-gray-100 bg-opacity-75'
-            />
-            <input
-              type='email'
-              value={formDetails.email}
-              placeholder='Email Address'
-              onChange={(e) => onFormUpdate('email', e.target.value)}
-              className='mb-6 p-2 mr-[50px] border border-headingColor rounded-[10px] bg-gray-100 bg-opacity-75'
-            />
-            <input
-              type='tel'
-              value={formDetails.phone}
-              placeholder='Phone No.'
-              onChange={(e) => onFormUpdate('phone', e.target.value)}
-              className='mb-6 p-2 mr-[50px] border border-headingColor rounded-[10px] bg-gray-100 bg-opacity-75'
-            />
-            <textarea
-              rows='6'
-              value={formDetails.message}
-              placeholder='Message'
-              onChange={(e) => onFormUpdate('message', e.target.value)}
-              className='mb-2 p-2 w-[478px] border border-headingColor rounded-[10px] resize-none bg-gray-100 bg-opacity-75'
-            ></textarea>
-            <button
-              type='submit'
-              className='bg-primaryColor hover:bg-blue-500 transition-all duration-300 text-white font-bold py-2 px-4 rounded'
-            >
-              {buttonText}
-            </button>
-            {status.message && (
+          
+          <form onSubmit={handleSubmit} className='w-full'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6'>
               <div>
-                <p className={status.success === false ? 'text-red-500' : 'text-green-500'}>
-                  {status.message}
-                </p>
+                <input
+                  type='text'
+                  value={formDetails.firstName}
+                  placeholder='First Name'
+                  onChange={(e) => onFormUpdate('firstName', e.target.value)}
+                  className='w-full p-3 border border-headingColor rounded-lg bg-gray-100 bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-primaryColor'
+                />
               </div>
-            )}
+              <div>
+                <input
+                  type='text'
+                  value={formDetails.lastName}
+                  placeholder='Last Name'
+                  onChange={(e) => onFormUpdate('lastName', e.target.value)}
+                  className='w-full p-3 border border-headingColor rounded-lg bg-gray-100 bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-primaryColor'
+                />
+              </div>
+            </div>
+            
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6'>
+              <div>
+                <input
+                  type='email'
+                  value={formDetails.email}
+                  placeholder='Email Address'
+                  onChange={(e) => onFormUpdate('email', e.target.value)}
+                  className='w-full p-3 border border-headingColor rounded-lg bg-gray-100 bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-primaryColor'
+                />
+              </div>
+              <div>
+                <input
+                  type='tel'
+                  value={formDetails.phone}
+                  placeholder='Phone No.'
+                  onChange={(e) => onFormUpdate('phone', e.target.value)}
+                  className='w-full p-3 border border-headingColor rounded-lg bg-gray-100 bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-primaryColor'
+                />
+              </div>
+            </div>
+            
+            <div className='mb-6'>
+              <textarea
+                rows='6'
+                value={formDetails.message}
+                placeholder='Message'
+                onChange={(e) => onFormUpdate('message', e.target.value)}
+                className='w-full p-3 border border-headingColor rounded-lg resize-none bg-gray-100 bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-primaryColor'
+              ></textarea>
+            </div>
+            
+            <div className='flex flex-col items-start space-y-4'>
+              <button
+                type='submit'
+                className='bg-primaryColor hover:bg-blue-600 transition-all duration-300 text-white font-bold py-3 px-6 rounded-lg'
+              >
+                {buttonText}
+              </button>
+              
+              {status.message && (
+                <div className={`text-sm ${status.success === false ? 'text-red-500' : 'text-green-500'}`}>
+                  {status.message}
+                </div>
+              )}
+            </div>
           </form>
         </div>
       </section>
     </section>
   )
 }
-
 
 export default Contact
