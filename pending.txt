@@ -1,6 +1,6 @@
 Fixing the css  of the "about me" lines in hero section  
 
-Fixing portfolio section
+Fixing portfolio section (DONE)
 
 in skills section, the loading bars animation should trigger once user scrolls down till that section 
 

@@ -11,7 +11,7 @@ const Portfolio = () => {
     const [activeID, setactiveID] = useState(null);
 
     const getCategoryIcon = (category) => {
-        switch(category) {
+        switch (category) {
             case 'Machine Learning':
                 return <FaBrain className="text-3xl text-primaryColor" />;
             case 'Web Development':
@@ -29,24 +29,24 @@ const Portfolio = () => {
         setshowModal(true)
         setactiveID(id)
     }
-    
-    useEffect(()=>{
-        if(selectTab==='all'){
+
+    useEffect(() => {
+        if (selectTab === 'all') {
             setPortfolios(data)
         }
-        if(selectTab==='ML'){
-            const filteredData = data.filter(item=> item.category==='Machine Learning')
+        if (selectTab === 'ML') {
+            const filteredData = data.filter(item => item.category === 'Machine Learning')
             setPortfolios(filteredData)
         }
-        if(selectTab==='UI-design'){
-            const filteredData = data.filter(item=> item.category==='Blockchain')
+        if (selectTab === 'UI-design') {
+            const filteredData = data.filter(item => item.category === 'Blockchain')
             setPortfolios(filteredData)
         }
-        if(selectTab==='web-dev'){
-            const filteredData = data.filter(item=> item.category==='Web Development')
+        if (selectTab === 'web-dev') {
+            const filteredData = data.filter(item => item.category === 'Web Development')
             setPortfolios(filteredData)
         }
-    },[selectTab])
+    }, [selectTab])
 
     return (
         <section id="portfolio">
@@ -59,26 +59,26 @@ const Portfolio = () => {
                     </div>
 
                     <div className='flex gap-3'>
-                        <button 
-                            onClick={()=>setSelectTab('all')} 
+                        <button
+                            onClick={() => setSelectTab('all')}
                             className='flex items-center gap-2 text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white transition-all'
                         >
                             <FaBorderAll /> All
                         </button>
-                        <button 
-                            onClick={()=>setSelectTab('ML')} 
+                        <button
+                            onClick={() => setSelectTab('ML')}
                             className='flex items-center gap-2 text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white transition-all'
                         >
                             <FaBrain /> ML
                         </button>
-                        <button 
-                            onClick={()=>setSelectTab('UI-design')} 
+                        <button
+                            onClick={() => setSelectTab('UI-design')}
                             className='flex items-center gap-2 text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white transition-all'
                         >
                             <FaEthereum /> Blockchain
                         </button>
-                        <button 
-                            onClick={()=>setSelectTab('web-dev')} 
+                        <button
+                            onClick={() => setSelectTab('web-dev')}
                             className='flex items-center gap-2 text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white transition-all'
                         >
                             <FaCode /> Web Dev
@@ -88,7 +88,7 @@ const Portfolio = () => {
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-9'>
                     {portfolios?.map((Portfolio, index) => (
-                        <div 
+                        <div
                             key={index}
                             data-aos='fade-zoom-in'
                             data-aos-delay='50'
@@ -102,23 +102,21 @@ const Portfolio = () => {
                                 {Portfolio.title}
                             </h3>
                             <div className='flex flex-wrap gap-2 justify-center mb-4'>
-                                {Portfolio.technologies?.slice(0, 3).map((tech, i) => (
-                                    <span key={i} className='bg-gray-100 text-sm px-3 py-1 rounded-full'>
-                                        {tech}
-                                    </span>
-                                ))}
+                                <span className='bg-gray-100 text-sm px-3 py-1 rounded-full'>
+                                    {Portfolio.type}
+                                </span>
                             </div>
-                            <button 
-                                onClick={() => showModalHandler(Portfolio.id)} 
+                            <button
+                                onClick={() => showModalHandler(Portfolio.id)}
                                 className='mt-auto text-white bg-primaryColor hover:bg-primaryColorDark py-2 px-6 rounded-lg font-medium transition-all transform group-hover:scale-105'
                             >
-                                View Project
+                                Details
                             </button>
                         </div>
                     ))}
                 </div>
             </div>
-            
+
             {showModal && <Modal setshowModal={setshowModal} activeID={activeID} />}
         </section>
     )

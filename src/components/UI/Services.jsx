@@ -1,9 +1,5 @@
 import React from 'react'
-
-import dev from '../../assets/images/Development.png'
-import ml from '../../assets/images/Machine Learning.png'
-import des from '../../assets/images/design.png'
-
+import { FaBrain, FaDatabase, FaEthereum } from 'react-icons/fa';
 
 const Services = () => {
     return (
@@ -39,9 +35,7 @@ const Services = () => {
                                     </div>
 
                                     <div className='rounded-full bg-primaryColor border-white border-4 w-[52px] h-[52px] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
-                                        <figure>
-                                            <img src={ml} alt="Machine Learning Icon" />
-                                        </figure>
+                                        <FaBrain className='text-white text-[20px]' />
                                     </div>
                                 </div>
                             </div>
@@ -61,9 +55,7 @@ const Services = () => {
                                     </div>
 
                                     <div className='rounded-full bg-primaryColor border-white border-4 w-[52px] h-[52px] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
-                                        <figure>
-                                            <img src={dev} alt="Development Icon" />
-                                        </figure>
+                                        <FaDatabase className='text-white text-[20px]' />
                                     </div>
                                 </div>
                             </div>
@@ -83,9 +75,7 @@ const Services = () => {
                                     </div>
 
                                     <div className='rounded-full bg-primaryColor border-white border-4 w-[52px] h-[52px] absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
-                                        <figure>
-                                            <img src={des} alt="Blockchain Icon" />
-                                        </figure>
+                                        <FaEthereum className='text-white text-[20px]' />
                                     </div>
                                 </div>
                             </div>

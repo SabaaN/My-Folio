@@ -8,7 +8,7 @@ const Modal = ({activeID, setshowModal}) => {
 
   return (
     <div className='w-full h-full fixed top-0 bottom-0 left-0 z-10 bg-headingColor bg-opacity-40'>
-      <div className='max-w-[415px] mx-auto absolute top-1/2 left-1/2 z-20 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 p-4' style={{ background: 'linear-gradient(to right, #E0E0E0, #706F6F)'}}>
+      <div className='max-w-[415px] mx-auto absolute top-1/2 left-1/2 z-20 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 p-4' style={{ background: 'linear-gradient(to right, #E0E0E0,rgb(101, 161, 152))'}}>
         <div>
           <figure>
             <img className='rounded-[8px]' src={portfolio.imgUrl} alt='' />
@@ -27,7 +27,7 @@ const Modal = ({activeID, setshowModal}) => {
               Technologies Used:
             </h4>
             {portfolio.technologies.map((item, index) => (
-              <span key={index} className='bg-gray-100 text-[13px] py-2 px-2 rounded-[8px] mr-2'>
+              <span key={index} className='bg-gray-100 text-[13px] rounded-[8px] mr-2 mb-6 p-2'>
                 {item}
               </span>
             ))}
@@ -35,7 +35,7 @@ const Modal = ({activeID, setshowModal}) => {
 
         <a href={portfolio.siteUrl} target='blank'>
           <button className='bg-primaryColor text-white rounded-[8px] py-2 px-4 my-8 font-[500] hover:bg-headingColor ease-in duration-300'>
-            Visit Source
+              View Project
           </button>
         </a>
 

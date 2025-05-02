@@ -1,156 +1,164 @@
-import portfolioImg01 from "../images/movierec.png";
-import portfolioImg02 from "../images/laptopprice.png";
-import portfolioImg03 from "../images/weatherapp.png";
-import portfolioImg04 from "../images/consortapp.png";
-import portfolioImg05 from "../images/trackerapp.png";
-import portfolioImg06 from "../images/gymapp.png";
-import portfolioImg07 from "../images/shoeshop.png";
-import portfolioImg08 from "../images/spamdetect.png";
-
 const portfolios = [
   {
     id: "01",
     category: "Machine Learning",
-    title: "Music Genre Classfication",
+    title: "GenreSense",
     description:
-      "Developed a machine learning model to classify music tracks into different genres using audio features like MFCCs, spectral contrast, and tempo. The model was trained on the GTZAN dataset and achieved high accuracy using NNs (CNNs and RCNNs). React for front-end",
-    technologies: ["Python", "TensorFlow/Keras", "Librosa", "Scikit-learn", "NumPy"],
+      "Developed a machine learning model to classify music genres from audio files using features like MFCCs, spectral contrast, and tempo. Trained on the GTZAN dataset, the model achieved high accuracy using neural networks (CNNs and RCNNs). React for front-end",
+    technologies: ["Python", "TensorFlow/Keras", "Librosa", "Scikitlearn", "NumPy"],
     siteUrl: "#",
+    type: "Music Genre Classfication"
   },
   {
     id: "02",
     category: "Web Development",
-    title: "Resume Maker",
+    title: "CVForge",
     description:
-      "Friendly and vibrant UI for an application called consortia, for desktop. Rooted in contemporary design paradigms, the Consortia app's interface showcases clean elements that amplify both usability and user engagement.",
-    technologies: ["Figma"],
-    siteUrl: "https://www.figma.com/file/2uRgv9TahMV9iQDBRAGDQB/consortia-app?type=design&node-id=0%3A1&mode=design&t=Nj2W5zGuuKY4Rr5z-1",
+      "Developed a responsive web application that generates professional resumes from user input. Users fill a form, view the resume in real time and the app formats and exports a clean resume in PDF format.",
+    technologies: ["React.js", "Node.js", "HTML/CSS", "jsPDF"],
+    siteUrl: "#",
+    type: "Resume Maker"
   },
   {
     id: "03",
     category: "Machine Learning",
-    title: "Image Caption Generator",
+    title: "ImageStory",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "Implemented a deep learning model to generate natural language captions for images. Combined CNNs for image feature extraction with LSTMs for sequence generation.",
+    technologies: ["Python", "TensorFlow/Keras", "CNN", "LSTM"],
     siteUrl: "#",
+    type: "Image Caption Generator"
   }, 
   {
     id: "04",
     category: "Machine Learning",
-    title: "Image Colorizer",
+    title: "ColorRevive",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "Developed an AI-based tool to automatically colorize black-and-white images using deep CNN architecture. The model was trained on historical images to produce realistic colorization. Used  Encoder-decoder architectures and loss functions like MSE or perceptual loss",
+    technologies: ["Python", "TensorFlow/Keras", "OpenCV", "Matplotlib", "NumPy"],
     siteUrl: "#",
+    type: "Image Colorizer"
   },
   {
     id: "05",
-    category: "Machine Learning",
-    title: "Crowdfunding DApp",
+    category: "Blockchain",
+    title: "FundChain",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "A decentralized crowdfunding platform where users can create campaigns and receive funds in cryptocurrency. Smart contracts ensure transparency and automatic fund release.",
+    technologies: ["Solidity", "Web3.js", "React.js", "Hardhat"],
     siteUrl: "#",
+    type: "Crowdfunding DApp"
   },
   {
     id: "06",
     category: "Machine Learning",
-    title: "News Headline Generation",
+    title: "NewsFlash AI",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      " An NLP-based model that generates news headlines from input text using transformer architectures. Used techniques including tokenization, padding, and embedding layers. Implemented encoder-decoder architecture using LSTMs.",
+    technologies: ["Python", "Scikit learn", "Numpy", "Pandas", "Streamlit"],
     siteUrl: "#",
+    type: "News Headline Generation"
   },
   {
     id: "07",
     category: "Web Development",
-    title: "Expense Tracking Application",
+    title: "BudgetBuddy",
     description:
       "This Application is a comprehensive financial management tool designed to help users effortlessly track their expenses and income. Built using the MERN stack, it offers an intuitive and visually pleasing experience for managing personal finances.",
     technologies: ["ReactJs", "HTML & CSS", "Node.js", "MongoDB",],
     siteUrl: "https://github.com/SabaaN/Expense-Tracker",
+    type: "Expense Tracking Application"
   },
   {
     id: "08",
     category: "Machine Learning",
-    title: "Audio Classifier for Birds",
+    title: "ChirpDetect",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "Trained a CNN model to identify bird species from audio recordings using spectrogram analysis. Achieved high accuracy on a custom dataset of capuchin bird sounds.",
+    technologies: ["Python", "Librosa", "TensorFlow/Keras"],
     siteUrl: "#",
+    type: "Birds Audio Classification"
   },
   {
     id: "09",
     category: "Machine Learning",
-    title: "H-pylori Detection",
+    title: "GastroAI",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "A medical AI model to detect H. pylori bacteria in endoscopic images using deep learning. Assisted in early diagnosis with high precision. Used pre-trained Models (ResNet50 and MobileNet with hyperparameter tuning for higher accuracy). Front-end built on react and FAST API",
+    technologies: ["Python", "TensorFlow/Keras", "FAST API", "React"],
     siteUrl: "#",
+    type: " H-pylori Detection Deep Learning"
   },
   {
     id: "10",
     category: "Machine Learning",
-    title: "Documents Chat Bot",
+    title: "PDFPal",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "An AI-powered chatbot that answers queries by analyzing uploaded documents using NLP techniques. Supports PDF, DOCX, and text files. Front-end built with python GUI.",
+    technologies: ["Python", "LangChain", "HuggingFace LLM", "FAISS"],
     siteUrl: "#",
+    type: "Documents Chat Bot"
   },
   {
     id: "11",
     category: "Web Development",
-    title: "Gym Workout App",
+    title: "FlexFlow",
     description:
       "A comprehensive platform designed to assist users in their fitness journey. It offers a range of features, includingworkout plans,  recommendations, and information about different exercises.",
     technologies: ["ReactJs", "MaterialUI", "RapidAPI"],
     siteUrl: "https://github.com/SabaaN/Gym-web-app",
+    type: "Gym Exercise/workout Website"
   },
   {
     id: "12",
-    category: "Machine Learning",
-    title: "Computer Vision Projects with OpenCV",
+    category: "other",
+    title: "CV Labs",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+      "Implemented various CV projects like virtual mouse, virtual painter, virtual speaker tracker, using OpenCV.",
+    technologies: ["Python", "OpenCV", "NumPy"],
     siteUrl: "#",
+    type: "Computer Vision Projects with OpenCV"
   },
   {
     id: "13",
     category: "Machine Learning",
-    title: "Movie Recommender Application",
+    title: "CineMatch",
     description:
       "System is designed to help users discover new movies based on their interests and preferences. By analyzing the content and data of movies, the system provides personalized recommendations by identifying similar movies.",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+    technologies: ["Python", "Scikit learn", "Numpy", "Pandas", "Streamlit"],
     siteUrl: "https://github.com/SabaaN/Movie-Recommendation-System",
+    type: "Movie Recommender Application"
   },
   {
     id: "14",
-    category: "Machine Learning",
-    title: "Laptop Price Predictor",
+    category: "other",
+    title: "PyAssistant",
     description:
-      "The application is used for predicting laptop prices based on various features. By leveraging machine learning algorithms, this project aims to provide accurate price estimates for laptops, assisting users in making informed purchasing decisions.",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
-    siteUrl: "https://github.com/SabaaN/Laptop-price-predictor",
+      "A voice-controlled virtual assistant that performs tasks like web searches, reminders, and system commands.",
+    technologies: ["Python", "PyAudio"],
+    siteUrl: "#",
+    type: "Desktop Virtual Assistant"
   },
   {
     id: "15",
     category: "Machine Learning",
-    title: "Spam Message Detector",
+    title: "SpamShield",
     description:
       "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
+    technologies: ["Python", "Scikit learn", "Numpy", "Pandas", "Streamlit"],
     siteUrl: "#",
+    type: "Spam Message Detector"
   },
+
   {
     id: "16",
     category: "Machine Learning",
-    title: "Virtual Assistant",
+    title: "Laptop PricePulse",
     description:
-      "This project aims to develop a machine learning model that can accurately identify spam messages. The model is trained using labeled data, enabling it to learn patterns and features indicative of spam messages",
-    technologies: ["Python", "Sci-kit learn", "Numpy", "Pandas", "Streamlit"],
-    siteUrl: "#",
+      "The application is used for predicting laptop prices based on various features. By leveraging machine learning algorithms, this project aims to provide accurate price estimates for laptops, assisting users in making informed purchasing decisions.",
+    technologies: ["Python", "Scikit learn", "Numpy", "Pandas", "Streamlit"],
+    siteUrl: "https://github.com/SabaaN/Laptop-price-predictor",
+    type: "Laptop Price Predictor"
   },
   
 ];

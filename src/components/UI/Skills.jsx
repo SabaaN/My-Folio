@@ -1,9 +1,33 @@
 import React from 'react'
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 const Skills = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.3, // Trigger when 30% of element is visible
+    triggerOnce: false // Allow re-triggering when scrolling back up
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  const skillVariants = {
+    hidden: { width: 0 },
+    visible: (percent) => ({
+      width: `${percent}%`,
+      transition: { duration: 1.5, ease: "easeInOut" }
+    })
+  };
+
   return (
-    <section id='skills'>
+    <section id='skills' ref={ref}>
       <section className='container'>
         <div className='text-center'>
           <h2 className='text-headingColor font-[800] text-[2.4rem] mb-1'>
@@ -37,9 +61,10 @@ const Skills = () => {
                 <div className='w-full h-[5px] bg-gray-300 rounded mt-2 relative overflow-hidden'>
                   <motion.div 
                     className='absolute top-0 left-0 h-[5px] bg-primaryColor rounded'
-                    initial={{ width: 0 }}
-                    animate={{ width: `${percent}%` }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    custom={percent}
+                    initial="hidden"
+                    animate={controls}
+                    variants={skillVariants}
                   ></motion.div>
                 </div>
               </div>
@@ -71,9 +96,10 @@ const Skills = () => {
                 <div className='w-full h-[5px] bg-gray-300 rounded mt-2 relative overflow-hidden'>
                   <motion.div 
                     className='absolute top-0 left-0 h-[5px] bg-primaryColor rounded'
-                    initial={{ width: 0 }}
-                    animate={{ width: `${percent}%` }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    custom={percent}
+                    initial="hidden"
+                    animate={controls}
+                    variants={skillVariants}
                   ></motion.div>
                 </div>
               </div>
@@ -101,9 +127,10 @@ const Skills = () => {
                 <div className='w-full h-[5px] bg-gray-300 rounded mt-2 relative overflow-hidden'>
                   <motion.div 
                     className='absolute top-0 left-0 h-[5px] bg-primaryColor rounded'
-                    initial={{ width: 0 }}
-                    animate={{ width: `${percent}%` }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    custom={percent}
+                    initial="hidden"
+                    animate={controls}
+                    variants={skillVariants}
                   ></motion.div>
                 </div>
               </div>
@@ -131,9 +158,10 @@ const Skills = () => {
                 <div className='w-full h-[5px] bg-gray-300 rounded mt-2 relative overflow-hidden'>
                   <motion.div 
                     className='absolute top-0 left-0 h-[5px] bg-primaryColor rounded'
-                    initial={{ width: 0 }}
-                    animate={{ width: `${percent}%` }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    custom={percent}
+                    initial="hidden"
+                    animate={controls}
+                    variants={skillVariants}
                   ></motion.div>
                 </div>
               </div>

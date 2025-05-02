@@ -6,12 +6,12 @@ const Footer = () => {
        <div className='container'>
          <div className='sm:flex items-center justify-between md:gap-8'>
            <div className='w-full sm:w-1/2'>
-             <p className='text-gray-300 leading-7 mt-4 mb-5 sm:mt-0'>
+             <p className='text-white leading-7 mt-4 mb-5 sm:mt-0'>
                 I'm available to work full-time or part-time. Feel free to contact me at sabanvd34@gmail.com or +923362370128
              </p>
            </div> 
            <div className='w-full sm:w-1/2'>
-           <p className='text-gray-300 leading-7 ml-[200px] pt-[9px] sm:mt-0'>
+           <p className='text-white leading-7 ml-[200px] pt-[9px] sm:mt-0'>
             copyright © 2023 by Saba N | All Rights Reserved </p>
             <ul className='flex items-center gap-10 mt-[25px] mb-[20px] ml-[200px]'>
               <li>

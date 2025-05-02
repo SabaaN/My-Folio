@@ -70,7 +70,7 @@ const Hero = () => {
                     {/* Hero Image */}
                     <div className='basis-1/3 mt-10 sm:mt-0'>
                         <figure className='flex items-center justify-center'>
-                            <img src={heroImg} alt='' />
+                            <img src={heroImg} alt=''  className='animate-float' />
                         </figure>
                     </div>
                     {/* Hero Image end*/}
@@ -123,5 +123,4 @@ const Hero = () => {
         </section>
     )
 }
-
 export default Hero
