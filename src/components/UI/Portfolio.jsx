@@ -58,7 +58,7 @@ const Portfolio = () => {
                         </h3>
                     </div>
 
-                    <div className='flex gap-3'>
+                    <div className='flex flex-wrap gap-3 justify-center'>
                         <button
                             onClick={() => setSelectTab('all')}
                             className='flex items-center gap-2 text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white transition-all'

@@ -8,10 +8,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Signika Negative", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {

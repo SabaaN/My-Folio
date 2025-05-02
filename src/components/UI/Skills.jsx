@@ -88,7 +88,7 @@ const Skills = () => {
               { skill: 'YOLO', percent: 90 },
               { skill: 'OpenCV', percent: 70 },
             ].map(({ skill, percent }) => (
-              <div className='mb-4' key={skill}>
+              <div className='mb-4 mr-5' key={skill}>
                 <div className='flex justify-between text-headingColor font-[700] text-[1rem]'>
                   <span>{skill}</span>
                   <span className='font-[500]'>{percent}%</span>
@@ -150,7 +150,7 @@ const Skills = () => {
               { skill: 'MongoDB', percent: 80 },
               { skill: 'Git', percent: 90 },
             ].map(({ skill, percent }) => (
-              <div className='mb-4' key={skill}>
+              <div className='mb-4 mr-5' key={skill}>
                 <div className='flex justify-between text-headingColor font-[700] text-[1rem]'>
                   <span>{skill}</span>
                   <span className='font-[500]'>{percent}%</span>
