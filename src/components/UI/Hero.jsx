@@ -22,7 +22,7 @@ const Hero = () => {
 
                             <button onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = 'https://drive.google.com/file/d/1i_MhPu03lH-dXaCTNCnIdVM3tafejegk/view?usp=sharing';
+                                link.href = 'https://drive.google.com/file/d/1ZvzmKPp9Tn1dKo7lOepzFxLg0JdLp70X/view?usp=sharing';
                                 link.download = 'My Resume.pdf';
                                 link.target = '_blank';
                                 document.body.appendChild(link);
